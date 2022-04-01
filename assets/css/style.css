@@ -1,6 +1,67 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: Dash Bir - Dashboard HTML Template
+    Author: Lancer Abir
+    Author URI:  https://lancer-abir.web.app/
+    Version: 1.1
+    Note: This is Main Style CSS File.
+-----------------------------------------------------------------------------------
+	CSS INDEX
+	===================
+    #. ======= Common CSS =======
+    #. ======= Dashboard Side-Bar CSS =======
+    
+    #. ======= Dashboard Main CSS =======
+        ##. Dashboard TopBar 
+        ##. Dashboard Cards
+        ##. Dashboard Order List
+        ##. Dashboard New Customers
+    #. ======= Responsive Media Queries CSS =======
+-----------------------------------------------------------------------------------*/
+/*======= Common CSS =======*/
 /* google Font */
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap");
 
+:root {
+    --color-heading: #000000;
+    --color-logo: #0f262a;
+    --color-white: #fff;
+    --span-active-color: #167ea8;
+    --font-body: "Dosis", sans-serif;
+}
+
 body {
-    font-family: "Dosis", sans-serif;
+    color: var(--color-black1);
+    font-family: var(--font-body);
+    min-height: 100vh;
+    overflow-x: hidden !important;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-body);
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-heading);
+    margin: 0px;
 }
