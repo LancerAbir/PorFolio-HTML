@@ -8,13 +8,20 @@
 	CSS INDEX
 	===================
     #. ======= Common CSS =======
-    #. ======= Dashboard Side-Bar CSS =======
     
-    #. ======= Dashboard Main CSS =======
-        ##. Dashboard TopBar 
-        ##. Dashboard Cards
-        ##. Dashboard Order List
-        ##. Dashboard New Customers
+    
+    #. ======= Header CSS =======
+        ##. Navbar Section
+        ##. Hero Section
+    #. ======= Promo Section =======
+    #. ======= Services Section =======
+    #. ======= Skills Section =======
+    #. ======= Portfolio Section =======
+    #. ======= Testimonials Section =======
+    #. ======= Blog Section =======
+    #. ======= Contact Section =======
+    #. ======= Footer Section =======
+        
     #. ======= Responsive Media Queries CSS =======
 -----------------------------------------------------------------------------------*/
 /*======= Common CSS =======*/
@@ -22,21 +29,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap");
 
 :root {
-    --color-heading: #000000;
-    --color-logo: #0f262a;
+    --color-black: #000000;
+    --color-heading: #0f262a;
     --color-white: #fff;
+    --color-bg: rgba(9, 127, 165, 0.2);
+    --color-body: #6a6969;
     --span-active-color: #167ea8;
     --font-body: "Dosis", sans-serif;
 }
 
 body {
-    color: var(--color-black1);
+    color: var(--color-body);
     font-family: var(--font-body);
     min-height: 100vh;
     overflow-x: hidden !important;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 2;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 * {
@@ -60,8 +69,255 @@ h4,
 h5,
 h6 {
     font-family: var(--font-body);
-    font-weight: 400;
-    line-height: 1.2;
+    font-weight: 600;
     color: var(--color-heading);
     margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.active,
+span {
+    color: var(--span-active-color);
+}
+
+h3.section__sub__title {
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--span-active-color);
+}
+
+h2.section__title {
+    letter-spacing: 0.01em;
+    font-size: 48px;
+    line-height: 63px;
+    color: var(--color-black);
+}
+/*======= Header CSS =======*/
+.header {
+    background-image: url(../img/Ellipse\ 7.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 255px;
+}
+
+/* ##. Navbar Section */
+.header__top {
+    margin-bottom: 156px;
+}
+
+a.header__logo h2 {
+    font-size: 50px;
+    line-height: 50px;
+    font-weight: 700;
+    position: relative;
+    padding: 37px 0;
+    display: block;
+}
+
+a.header__logo h2:after {
+    position: absolute;
+    right: 80px;
+    bottom: 44px;
+    width: 12px;
+    height: 12px;
+    background-color: var(--span-active-color);
+    content: "";
+    border-radius: 50%;
+}
+
+.main__menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.main__menu ul li {
+    list-style: none;
+    display: inline-block;
+}
+
+.main__menu ul li a {
+    display: block;
+    color: var(--color-heading);
+    margin-right: 50px;
+    padding: 50px 0;
+    transition: all 0.5s;
+    line-height: 24px;
+    font-weight: 500;
+}
+
+.main__menu ul li a:hover,
+.main__menu ul li a:active {
+    color: var(--span-active-color);
+}
+
+a.profile__photo img {
+    background-color: var(--color-bg);
+    max-width: 60px;
+    max-height: 60px;
+    border-radius: 50%;
+}
+
+a.section__btn {
+    background-color: var(--span-active-color);
+    padding: 11px 29px;
+    margin-left: 18px;
+    color: var(--color-white);
+    display: inline-block;
+    font-weight: 500;
+    line-height: 24px;
+    transition: all 0.3s;
+}
+
+a.section__btn:hover {
+    background-color: var(--color-heading);
+}
+
+.profile {
+    padding: 32px 0;
+}
+
+/* ##. Hero Section */
+h1.page-header {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 105px;
+    letter-spacing: 2px;
+    margin-bottom: 75px;
+}
+
+.info__image img.main__image {
+    width: auto;
+    height: 760px;
+}
+
+.info__image {
+    position: relative;
+}
+
+img.icon__one {
+    position: absolute;
+    top: -58px;
+    left: 33%;
+    width: 66px;
+    height: auto;
+    z-index: 99;
+}
+
+img.icon__two {
+    position: absolute;
+    top: 130px;
+    left: 21%;
+    width: 100px;
+    height: 97.5px;
+    z-index: 99;
+}
+
+img.icon__three {
+    position: absolute;
+    top: 130px;
+    right: 21%;
+    width: 100px;
+    height: 97.5px;
+    z-index: 99;
+}
+
+p.text__one {
+    position: absolute;
+    bottom: 44%;
+    left: 11%;
+
+    z-index: 99;
+    background-color: var(--color-white);
+    padding: 13px 23px;
+    color: var(--color-heading);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+p.text__two {
+    position: absolute;
+    bottom: 55%;
+    right: 25%;
+    z-index: 99;
+    background-color: var(--color-white);
+    padding: 13px 23px;
+    color: var(--color-heading);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+p.text__three {
+    position: absolute;
+    bottom: 32%;
+    right: 7%;
+    z-index: 99;
+    background-color: var(--color-white);
+    padding: 13px 23px;
+    color: var(--color-heading);
+    font-size: 24px;
+    line-height: 32px;
+}
+
+/* #. ======= Promo Section ======= */
+.promo-section {
+    background-color: var(--color-white);
+    padding: 60px 65px;
+    box-shadow: 0px 4px 40px rgba(22, 126, 168, 0.1);
+    border-radius: 10px;
+    position: absolute;
+    bottom: -128px;
+}
+
+.promo-section img {
+    width: 155px;
+    height: auto;
+    margin-right: 35px;
+}
+
+/* #. ======= Services Section ======= */
+.services__box {
+    padding: 48px 45px; /* background-color: var(--color-white); */
+    box-shadow: 0px 4px 40px rgba(22, 126, 168, 0.1);
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.services__img {
+    background-color: var(--color-bg);
+    width: 160px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 30px;
+}
+
+section.services__section h2.section__title {
+    margin-bottom: 64px;
+}
+
+.services__info h3 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+a.services__btn {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: var(--span-active-color);
+    transition: all 0.3s;
+    margin-top: 20px;
+}
+
+a.services__btn:hover {
+    color: var(--color-heading);
+}
+
+section.services__section {
+    margin-bottom: 160px;
 }
