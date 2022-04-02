@@ -35,7 +35,22 @@
     --color-bg: rgba(9, 127, 165, 0.2);
     --color-body: #6a6969;
     --span-active-color: #167ea8;
+    --bar__color__one: #2f9ff2;
+    --bar__color__two: #1cbe59;
+    --bar__color__three: #a259ff;
     --font-body: "Dosis", sans-serif;
+}
+
+.bar__BGcolor__one {
+    background-color: var(--bar__color__one);
+}
+
+.bar__BGcolor__two {
+    background-color: var(--bar__color__two);
+}
+
+.bar__BGcolor__three {
+    background-color: var(--bar__color__three);
 }
 
 body {
@@ -320,4 +335,23 @@ a.services__btn:hover {
 
 section.services__section {
     margin-bottom: 160px;
+}
+
+/* #. ======= Skills Section ======= */
+
+.skill__right img {
+    width: 553px;
+    height: auto;
+}
+
+.skill__right {
+    margin-left: 90px;
+}
+
+section.skill__section .section__title {
+    margin-bottom: 50px;
+}
+
+.skill__content p.skill__text {
+    margin-bottom: 50px;
 }
