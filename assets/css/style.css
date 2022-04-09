@@ -338,10 +338,13 @@ section.services__section {
 }
 
 /* #. ======= Skills Section ======= */
+section.skill__section {
+    margin-bottom: 160px;
+}
 
 .skill__right img {
-    width: 553px;
-    height: auto;
+    width: auto;
+    height: 810px;
 }
 
 .skill__right {
@@ -354,4 +357,174 @@ section.skill__section .section__title {
 
 .skill__content p.skill__text {
     margin-bottom: 50px;
+}
+
+.skill__bar__measurement p {
+    color: var(--color-black);
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.skill__progress__bar__lists {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+p.bar__color__one {
+    position: absolute;
+    right: 36%;
+    top: 2px;
+    color: var(--bar__color__one);
+    font-weight: 500;
+}
+
+p.bar__color__two {
+    position: absolute;
+    right: 17%;
+    top: 2px;
+    color: var(--bar__color__two);
+    font-weight: 500;
+}
+
+p.bar__color__three {
+    position: absolute;
+    right: 22%;
+    top: 2px;
+    color: var(--bar__color__three);
+    font-weight: 500;
+}
+
+/* #. ======= Portfolio Section ======= */
+section.portfolio__section h2.section__title {
+    margin-bottom: 35px;
+}
+
+.isotope__menu ul {
+    margin: 0;
+    padding: 0;
+}
+
+.isotope__menu ul li {
+    display: inline-block;
+}
+
+.isotope__menu ul li a {
+    display: block;
+    margin-right: 50px;
+    color: var(--color-heading);
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.isotope__menu {
+    margin-bottom: 30px;
+}
+
+.isotope__menu ul li a:hover {
+    color: var(--span-active-color);
+}
+
+.isotope__menu ul li a.active {
+    color: var(--span-active-color);
+}
+
+.isotope__items {
+    margin-bottom: 30px;
+}
+
+.portfolio__isotope {
+    margin-bottom: 190px;
+}
+
+/* #. ======= Testimonials Section ======= */
+section.testimonials__section h2.section__title {
+    margin-bottom: 64px;
+}
+
+.testimonials__content p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    color: var(--color-body);
+    margin-bottom: 30px;
+}
+
+.testimonials__user {
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.testimonials__user__info h4 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--color-black);
+    margin-left: 10px;
+}
+
+.testimonials__user__info h4 span {
+    display: inherit;
+    font-size: 75%;
+    color: var(--color-body);
+    font-weight: 400;
+}
+
+.testimonials__user img {
+    background-color: var(--color-bg);
+    border-radius: 50%;
+}
+
+section.testimonials__section {
+    margin-bottom: 280px;
+}
+
+/* #. ======= Blog Section ======= */
+section.blog__section h2.section__title {
+    margin-bottom: 64px;
+}
+
+section.blog__section {
+    margin-bottom: 170px;
+}
+
+.blog__box img {
+    background-color: var(--color-bg);
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.blog__meta {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+    color: var(--color-body);
+    margin-bottom: 5px;
+}
+
+.blog__meta a {
+    font-weight: 500;
+
+    color: var(--span-active-color);
+}
+
+a.blog__text h4 {
+    color: var(--color-black);
+    font-size: 21px;
+    line-height: 32px;
+}
+
+/* #. ======= Contact Section ======= */
+section.contact__section {
+    margin-bottom: 260px;
+}
+
+.contact__sidebar {
+}
+
+.contact__sidebar img {
+    background-color: var(--color-bg);
+    margin-bottom: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
